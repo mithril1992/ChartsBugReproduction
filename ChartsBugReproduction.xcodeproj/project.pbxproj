@@ -13,6 +13,7 @@
 		74C027002BA1D6B600ACFC51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C026FE2BA1D6B600ACFC51 /* Main.storyboard */; };
 		74C027022BA1D6B700ACFC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C027012BA1D6B700ACFC51 /* Assets.xcassets */; };
 		74C027052BA1D6B700ACFC51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C027032BA1D6B700ACFC51 /* LaunchScreen.storyboard */; };
+		74C0270E2BA1D82D00ACFC51 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 74C0270D2BA1D82D00ACFC51 /* DGCharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C0270E2BA1D82D00ACFC51 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ChartsBugReproduction;
+			packageProductDependencies = (
+				74C0270D2BA1D82D00ACFC51 /* DGCharts */,
+			);
 			productName = ChartsBugReproduction;
 			productReference = 74C026F52BA1D6B600ACFC51 /* ChartsBugReproduction.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 74C026EC2BA1D6B600ACFC51;
+			packageReferences = (
+				74C0270C2BA1D82D00ACFC51 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 74C026F62BA1D6B600ACFC51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74C0270C2BA1D82D00ACFC51 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74C0270D2BA1D82D00ACFC51 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74C0270C2BA1D82D00ACFC51 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74C026ED2BA1D6B600ACFC51 /* Project object */;
 }
